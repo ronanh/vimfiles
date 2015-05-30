@@ -256,6 +256,7 @@
   set foldmethod=syntax                               "fold via syntax of files
   set foldlevelstart=99                               "open all folds by default
   let g:xml_syntax_folding=1                          "enable xml folding
+  let g:airline_powerline_fonts = 1
 
   set cursorline
   autocmd WinLeave * setlocal nocursorline
@@ -672,6 +673,7 @@
     NeoBundle 'chrisbra/vim_faq'
     NeoBundle 'vimwiki'
     NeoBundle 'bufkill.vim'
+    NeoBundle 'edkolev/tmuxline.vim'
     NeoBundle 'mhinz/vim-startify' "{{{
       let g:startify_session_dir = s:get_cache_dir('sessions')
       let g:startify_change_to_vcs_root = 1
@@ -881,6 +883,7 @@
   NeoBundle 'chriskempson/base16-vim'
   NeoBundle 'w0ng/vim-hybrid'
   NeoBundle 'sjl/badwolf'
+  NeoBundle 'tpope/vim-vividchalk'
   NeoBundle 'zeis/vim-kolor' "{{{
     let g:kolor_underlined=1
   "}}}
