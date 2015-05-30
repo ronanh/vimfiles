@@ -194,7 +194,9 @@
   set display+=lastline
   set wildmenu                                        "show list for autocomplete
   set wildmode=list:full
-  set wildignorecase
+  if exists("&wildignorecase")
+    set wildignorecase
+  endif
 
   set splitbelow
   set splitright
@@ -293,10 +295,14 @@
       set gfn=Ubuntu\ Mono\ 11
     endif
   else
+    if $TERM == 'screen-256color'
+      set t_Co=256 "why you no tell me correct colors?!?!
+    endif
     if $COLORTERM == 'gnome-terminal'
       set t_Co=256 "why you no tell me correct colors?!?!
     endif
     if $TERM_PROGRAM == 'iTerm.app'
+
       " different cursors for insert vs normal mode
       if exists('$TMUX')
         let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
