@@ -674,6 +674,7 @@
     NeoBundle 'vimwiki'
     NeoBundle 'bufkill.vim'
     NeoBundle 'edkolev/tmuxline.vim'
+    NeoBundle 'ekalinin/Dockerfile.vim'
     NeoBundle 'mhinz/vim-startify' "{{{
       let g:startify_session_dir = s:get_cache_dir('sessions')
       let g:startify_change_to_vcs_root = 1
