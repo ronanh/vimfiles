@@ -504,7 +504,7 @@
     "}}}
     NeoBundle 'jiangmiao/auto-pairs'
     NeoBundle 'justinmk/vim-sneak' "{{{
-      let g:sneak#streak = 1
+"      let g:sneak#streak = 1
     "}}}
   endif "}}}
   if count(s:settings.plugin_groups, 'navigation') "{{{
