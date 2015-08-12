@@ -676,6 +676,7 @@
     NeoBundle 'edkolev/tmuxline.vim'
     NeoBundle 'ekalinin/Dockerfile.vim'
     NeoBundle 'elixir-lang/vim-elixir'
+    NeoBundle 'rizzatti/dash.vim'
     NeoBundle 'mhinz/vim-startify' "{{{
       let g:startify_session_dir = s:get_cache_dir('sessions')
       let g:startify_change_to_vcs_root = 1
@@ -755,6 +756,8 @@
 
   inoremap <C-u> <C-g>u<C-u>
 
+  " rhi: remap space to insert one char
+  :nmap <Space> i_<Esc>r
   if mapcheck('<space>/') == ''
     nnoremap <space>/ :vimgrep //gj **/*<left><left><left><left><left><left><left><left>
   endif
